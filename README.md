@@ -1,2 +1,2 @@
 # ProyectoAulaATECA
-# Documentación en proceso#
+# Documentación en proceso #
