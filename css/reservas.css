@@ -1,0 +1,70 @@
+table {
+    border: solid 4px #fff;
+    max-width: 800px;
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    border-collapse: collapse;
+
+    tr td {
+        border: solid 4px #000;
+        padding: 10px;
+
+    }
+
+    tr {
+        &:nth-child(odd) {
+            background-color: green;
+        }
+
+        &:nth-child(even) {
+            background-color: lightgreen;
+        }
+
+        button {
+            background-color: tomato;
+            color: #610f35;
+            font-size: 13pt;
+            border: none;
+            padding: 10px;
+            max-width: 200px;
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        span {
+            display: inline-block;
+            background-color: goldenrod;
+            padding: 10px;
+            max-width: 200px;
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+
+.btn-verReservas {
+    border: none;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: tomato;
+    border-radius: 10px;
+}
+
+input[type="date"] {
+    background-color: goldenrod;
+    border: none ;
+    border-radius: 10px ;
+    max-width: 200px ;
+    width: 100% ;
+    padding: 10px ;
+}
+
+@media screen and (max-width:999px) {
+    section {
+        width: 90%;
+        margin: 10px auto;
+    }
+}

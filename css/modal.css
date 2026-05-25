@@ -78,7 +78,7 @@
             padding: 10px;
             color: #fff;
             cursor: pointer;
-            font-size: 13pt ;
+            font-size: 13pt;
         }
 
     }
@@ -114,5 +114,33 @@ dialog[open] {
         border: none;
         border-radius: var(--R2);
         color: #fff;
+    }
+}
+
+
+/* para la página de reservas, cerrar sesión */
+.modal_Reservas {
+    position: absolute;
+    top: 60px ;
+    right: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bg-video);
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+
+    h1 {
+        font-size: 40pt;
+    }
+
+    button {
+        border: none;
+        background-color: tomato;
+        font-weight: bolder;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
     }
 }
