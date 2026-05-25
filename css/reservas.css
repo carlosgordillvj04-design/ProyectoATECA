@@ -1,3 +1,19 @@
+:root {
+    /*Variables*/
+    --bg-header: #AAAA00;
+    --bg-text: #ffff9f;
+    --color-txt-header: #000;
+    --bg-button: #0000B1;
+    --bg-video: #4646FF;
+    --bg-input-color: #444;
+
+    --R1: 4px;
+    --R2: 8px;
+    --R3: 12px;
+    --R4: 16px;
+
+}
+
 table {
     border: solid 4px #fff;
     max-width: 800px;
@@ -23,7 +39,7 @@ table {
 
         button {
             background-color: tomato;
-            color: #610f35;
+            color: #fff;
             font-size: 13pt;
             border: none;
             padding: 10px;
@@ -35,13 +51,21 @@ table {
 
         span {
             display: inline-block;
-            background-color: goldenrod;
+            background-color: var(--bg-video);
+            color: #fff;
             padding: 10px;
             max-width: 200px;
             width: 100%;
             border-radius: 10px;
         }
+
+        span.reservado {
+            background-color: goldenrod;
+        }
+
+
     }
+
 }
 
 
@@ -51,15 +75,16 @@ table {
     margin: 10px auto;
     background-color: tomato;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 input[type="date"] {
     background-color: goldenrod;
-    border: none ;
-    border-radius: 10px ;
-    max-width: 200px ;
-    width: 100% ;
-    padding: 10px ;
+    border: none;
+    border-radius: 10px;
+    max-width: 200px;
+    width: 100%;
+    padding: 10px;
 }
 
 @media screen and (max-width:999px) {
@@ -67,4 +92,9 @@ input[type="date"] {
         width: 90%;
         margin: 10px auto;
     }
+}
+
+.btn-perfil {
+    max-width: 100px;
+    width: 100%;
 }
