@@ -52,13 +52,19 @@ $(function () {
         let cadena = ""
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i)
-            cadena += key + "<br/>"
             const array = JSON.parse(localStorage.getItem(key))
             for ( const valor of array ) {
                 cadena += tarjetaReservas(valor)
             }
         }
-        $("#resultado").html(cadena)
+        $("#resultado").empty()
+        $("#resultado").html( `
+            <div>
+                <p>Nombre de usuario</p>
+                <p>Fecha Reservada</p>
+                <p>Hora reservada</p>
+            </div>` )
+        $("#resultado").append(cadena)
     })
 
     // al cerrar sesión primero borrar toda la información del 

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/reservas.css">
     <link rel="stylesheet" href="../css/modal.css">
+    <link rel="stylesheet" href="../css/reservas.css">
     <script src="../jquery/jquery-3.7.1.min.js"></script>
     <script src="../js/reservas.js"></script>
     <title>Reservas</title>
@@ -26,7 +26,7 @@
         </dialog>
 
         <section>
-            <button class="btn-verReservas">Ver todas las reservas</button>
+            <button class="btn-verReservas" popovertarget="modal1">Ver todas las reservas</button>
             <aside>
 
                 <input type="date" id="fecha">
@@ -82,13 +82,13 @@
         </section>
 
 
-        <div>
-            <h1>Reservas realizadas</h1>
-            <div id="resultado">
-
-
-
+        <div popover="auto" id="modal1">
+            <div class="modal">
+                <h1>Reservas realizadas</h1>
+                <div id="resultado"></div>
+                <button popovertarget="modal1">Cerrar</button>
             </div>
+
         </div>
 
     </div>
