@@ -6,6 +6,7 @@
     --bg-button: #0000B1;
     --bg-video: #4646FF;
     --bg-input-color: #444;
+    --bg-reservado: #00b000 ;
 
     --R1: 4px;
     --R2: 8px;
@@ -25,7 +26,6 @@ table {
     tr td {
         border: solid 4px #000;
         padding: 10px;
-
     }
 
     tr {
@@ -63,6 +63,10 @@ table {
             background-color: goldenrod;
         }
 
+        button.reservado {
+            background-color: var(--bg-reservado) ;
+        }
+
 
     }
 
@@ -97,4 +101,9 @@ input[type="date"] {
 .btn-perfil {
     max-width: 100px;
     width: 100%;
+}
+
+#resultado div {
+    display: flex;
+    gap: 20px ;
 }

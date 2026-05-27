@@ -6,4 +6,9 @@ $(function () {
         modalLogin[0].hidePopover()
         modalRegistrar[0].showPopover()
     })
+
+    $(".btn-login").on('click',function(){
+        location.href = "../webs/reservas.html"
+    })
+
 })
